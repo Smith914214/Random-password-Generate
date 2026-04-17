@@ -1,1 +1,14 @@
-# Random-password-Generate
+# Random-password-Generate in Python
+
+import random
+import string
+
+pass_len = 10  #Length of Password
+
+charValues = string.ascii_letters + string.digits + string.punctuation
+password = ""
+
+for i in range(pass_len):
+    password += random.choice(charValues)
+    
+print("your random password is:",password)
